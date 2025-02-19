@@ -2,14 +2,14 @@
 
 import { Hero } from "../components/hero";
 import { FlickeringGrid } from "../components/flickering-grid";
-import Funders from "../components/funders";
+import Partners from "../components/partners";
 
 export default function Page() {
   return (
     <>
-      <div className="relative z-10 mb-20">
+      <div className="relative z-10 mb-20 max-h-screen">
         <Hero />
-        <Funders />
+        <Partners />
       </div>
       <FlickeringGrid
         className="absolute inset-0 z-0 [mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]"
