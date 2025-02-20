@@ -15,7 +15,7 @@ export const Hero = () => {
         <div className="text-center">
           <h1
             className={cn(
-              "text-2xl font-semibold text-balance sm:text-5xl leading-loose",
+              "text-2xl font-semibold text-black dark:text-white text-balance sm:text-5xl leading-loose",
               font.className
             )}
           >
@@ -23,7 +23,7 @@ export const Hero = () => {
           </h1>
           <p
             className={cn(
-              "text-gray-500 text-lg mt-10",
+              "text-gray-500 dark:text-white text-lg mt-10",
               font.className
             )}
           >
