@@ -21,8 +21,13 @@ export const Hero = () => {
           >
             Unlock insights, simplify discovery.
           </h1>
-          <p className="text-gray-500 text-lg mt-10">
-            Your solution for quick, secure, federated, open source Cohort Discovery.
+          <p
+            className={cn(
+              "text-gray-500 text-lg mt-10",
+              font.className
+            )}
+          >
+            Your solution for quick, secure, federated, and open source Cohort Discovery.
           </p>
           <div className="mt-16 flex items-center justify-center gap-x-6">
             <Link href={process.env.NEXT_PUBLIC_BUNNY_LINK ?? ""}>
