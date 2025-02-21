@@ -27,7 +27,7 @@ export const Hero = () => {
               font.className
             )}
           >
-            Your solution for quick, secure, federated, and open source Cohort Discovery.
+            Your solution for secure, federated, and open source Cohort Discovery.
           </p>
           <div className="mt-16 flex items-center justify-center gap-x-6">
             <Link href={process.env.NEXT_PUBLIC_BUNNY_LINK ?? ""}>
