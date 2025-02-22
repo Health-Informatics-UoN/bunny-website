@@ -30,7 +30,7 @@ export const Hero = () => {
             Your solution for secure, federated, and open source Cohort Discovery.
           </p>
           <div className="mt-16 flex items-center justify-center gap-x-6">
-            <Link href={process.env.NEXT_PUBLIC_BUNNY_LINK ?? ""}>
+            <Link href='https://hutch.health/bunny/quickstart'>
               <ShimmerButton className="flex" background="#4BA6EE" shimmerSize="2px" shimmerDuration="2s">
                 <span
                   className={cn(
