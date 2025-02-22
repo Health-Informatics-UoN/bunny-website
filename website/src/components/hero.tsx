@@ -10,7 +10,7 @@ export const Hero = () => {
     <div className="px-6 lg:px-8">
       <div className="mx-auto max-w-2xl py-32 sm:py-32 lg:py-24">
         <div className="mb-8 flex justify-center">
-          <img alt="" src="./logos/bunny1.svg" className="h-30 w-auto" />
+          <img alt="" src="./logos/bunny.svg" className="h-30 w-auto" />
         </div>
         <div className="text-center">
           <h1
