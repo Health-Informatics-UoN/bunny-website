@@ -3,8 +3,8 @@ import "@/src/app/globals.css";
 import { ThemeProvider } from "@/src/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Hutch Bunny",
-  description: "Your secure gateway to OMOP cohort discovery",
+  title: "Bunny | Unlock insights, simplify discovery.",
+  description: "Your solution for secure, federated, and open source Cohort Discovery.",
   icons: {
     icon: "/icons/favicon.ico",
     apple: "/icons/apple-touch-icon.png",
