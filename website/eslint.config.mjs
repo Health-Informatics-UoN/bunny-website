@@ -11,16 +11,40 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
+    languageOptions: {
+      ecmaVersion: 2023,
+      sourceType: "module",
+      globals: {
+        browser: true,
+        node: true,
+      },
+      ecmaFeatures: {
+        jsx: true,
+      },
+    },
     plugins: {
+      prettier,
+      "@typescript-eslint": typescriptEslint,
       "simple-import-sort": simpleImportSort,
+      "@next/next": nextPlugin,
     },
     rules: {
-      "simple-import-sort/imports": "error",
-      "simple-import-sort/exports": "error",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-uses-react": "off",
+      "react/prop-types": "off",
+      "eslint/no-unused-vars": "off",
+      "simple-import-sort/imports": "warn",
+      "simple-import-sort/exports": "warn",
+      "prettier/prettier": ["warn", { endOfLine: "auto" }],
+      "@typescript-eslint/no-unused-vars": "warn",
     },
   },
+  ...compat.extends(
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@next/next/recommended"
+  ),
 ];
 
 export default eslintConfig;
