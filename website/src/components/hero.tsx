@@ -9,7 +9,7 @@ const font = Manrope({ weight: "500", subsets: ["latin"] });
 export const Hero = () => {
   return (
     <div className="px-6 lg:px-8">
-      <div className="mx-auto max-w-2xl py-32 sm:py-32 lg:py-24">
+      <div className="mx-auto max-w-2xl py-32 sm:py-32 lg:py-12">
         <div className="mb-8 flex justify-center">
           <img alt="" src="./logos/bunny.svg" className="h-30 w-auto" />
         </div>

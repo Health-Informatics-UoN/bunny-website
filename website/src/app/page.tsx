@@ -1,13 +1,13 @@
 "use client";
 
-import { Hero } from "@/src/components/hero";
 import { FlickeringGrid } from "@/src/components/flickering-grid";
+import { Hero } from "@/src/components/hero";
 import Partners from "@/src/components/partners";
 
 export default function Page() {
   return (
     <>
-      <div className="container mx-auto relative z-10 mb-20 max-h-screen">
+      <div className="container mx-auto relative z-10 max-h-screen">
         <Hero />
         <Partners />
       </div>
