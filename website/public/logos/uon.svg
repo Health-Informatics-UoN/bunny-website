@@ -54,7 +54,7 @@
   <defs>
     <style>
       .uon-color-black {
-        fill: black
+        fill: #10263B
       }
 
       .uon-color-white {
