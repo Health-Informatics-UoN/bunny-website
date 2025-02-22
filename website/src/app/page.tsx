@@ -1,8 +1,8 @@
 "use client";
 
-import { Hero } from "../components/hero";
-import { FlickeringGrid } from "../components/flickering-grid";
-import Partners from "../components/partners";
+import { Hero } from "@/src/components/hero";
+import { FlickeringGrid } from "@/src/components/flickering-grid";
+import Partners from "@/src/components/partners";
 
 export default function Page() {
   return (

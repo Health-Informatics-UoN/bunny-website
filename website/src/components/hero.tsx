@@ -1,8 +1,9 @@
 import { Manrope } from "next/font/google";
 
-import { cn } from "../lib/utils";
-import { ShimmerButton } from "./shimmer-button";
+import { cn } from "@/src/lib/utils";
+import { ShimmerButton } from "@/src/components/shimmer-button";
 import Link from "next/link";
+import { Button } from "@/src/components/ui/button";
 
 const font = Manrope({ weight: "500", subsets: ["latin"] });
 export const Hero = () => {
@@ -30,7 +31,7 @@ export const Hero = () => {
             Your solution for secure, federated, and open source Cohort Discovery.
           </p>
           <div className="mt-16 flex items-center justify-center gap-x-6">
-            <Link href='https://hutch.health/bunny/quickstart'>
+            <Link href='https://hutch.health/bunny/quickstart' target="_blank">
               <ShimmerButton className="flex" background="#4BA6EE" shimmerSize="2px" shimmerDuration="2s">
                 <span
                   className={cn(
@@ -42,6 +43,14 @@ export const Hero = () => {
                 </span>
               </ShimmerButton>
             </Link>
+          </div>
+          <div className="mt-4 flex items-center justify-center">
+            <Button variant="ghost" asChild className="text-black dark:text-white dark:hover:text-black">
+              <Link href='https://github.com/health-informatics-uon/hutch-bunny' target="_blank">
+                <img src="/logos/github.svg" alt="GitHub" className="h-5 w-5" /> 
+                Github
+              </Link>
+            </Button>
           </div>
         </div>
       </div>
