@@ -1,4 +1,4 @@
-import { Globe, Zap, Brain, Eye, Shield, TabletSmartphone, Code } from 'lucide-react';
+import { Zap, Eye, Shield, Code } from 'lucide-react';
 
 interface Feature {
   title: string;
