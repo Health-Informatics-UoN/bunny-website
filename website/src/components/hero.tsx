@@ -4,6 +4,7 @@ import { cn } from "@/src/lib/utils";
 import { ShimmerButton } from "@/src/components/shimmer-button";
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const font = Manrope({ weight: "500", subsets: ["latin"] });
 export const Hero = () => {
@@ -49,6 +50,12 @@ export const Hero = () => {
               <Link href='https://github.com/health-informatics-uon/hutch-bunny' target="_blank">
                 <img src="/logos/github.svg" alt="GitHub" className="h-5 w-5" /> 
                 Github
+              </Link>
+            </Button>
+            <Button variant="ghost" asChild className="text-black dark:text-white dark:hover:text-black">
+              <Link href='https://hutch.health/bunny' target="_blank">
+                <ArrowRight className="h-5 w-5" /> 
+                Documentation
               </Link>
             </Button>
           </div>
